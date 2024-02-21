@@ -35,6 +35,7 @@ export default function MainRouter() {
       <Wrapper id="main">
         <Routes>
           <Route index element={<Home />} />
+          <Route path="/code-sandbox" element={<Home />} />
 
           {Object.entries(LAYOUT).map(([type, { Element: List }]) => {
             return (
